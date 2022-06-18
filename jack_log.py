@@ -76,8 +76,7 @@ class CustomFormatter(logging.Formatter):
     CROSSED = "\033[9m"
     END = "\033[0m"
 
-    # format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s (%(filename)s:%(lineno)d)"
-    format = "%(levelname)s - %(message)s (%(filename)s:%(lineno)d)"
+    format = "(%(filename)s:%(lineno)d): %(message)s "
 
     # %(asctime)s#     表示当前时间，格式为# 2018-07-01 19:08:41,050# ，逗号后面是毫秒
     # %(levelname)s#   表示日志级别名称
